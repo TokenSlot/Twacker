@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+}
+
+.nav-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.box {
+    background: #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.vote {
+    cursor: pointer;
+}
+
+#twackarea, #edit-twackarea {
+    width: 100%;
+    resize: none;
+    min-height: 100px;
+    overflow: auto;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+#twackarea:focus, #edit-twackarea:focus {
+    outline: none;
+}
+
+#twackarea:focus::placeholder, #edit-twackarea::placeholder {
+    color: transparent;
+}
+
+#twackbtn, #twackEditbtn {
+    border-radius: 3px;
+    width: 100%;
+}
+
+.twack-img {
+    max-width: 600px;
+    width:100%;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.twack-deco:hover {
+    text-decoration: none;
+}
+
+.twack-deco:focus{
+    text-decoration: none;
+}
+
+.cover-box {
+    display: block;
+    background: black;
+}
+.profile-box {
+    position: relative;
+    text-align: center;
+}
+
+.img-wrap {
+    border: 2px white solid;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.profile-box:hover .img-wrap {
+    background-color: black;
+}
+
+.profile-box img {
+    width: 150px;
+    border-radius: 100%;
+}
+
+.profile-box:hover img {
+    opacity: 0.5;
+}
+
+.profile-box h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+}
+
+.profile-box:hover h4 {
+    opacity: 1;
+}
+
+.top {
+    border: 1px black solid;
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.middle {
+    border: 1px black solid;
+    border-top: 1px grey dashed;
+    border-radius: 0;
+    border-bottom: none;
+}
+
+.bottom {
+    border: 1px black solid;
+    border-top: 1px grey dashed;
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 5px;
+}
+
+
+
