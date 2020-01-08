@@ -71,6 +71,16 @@ $(document).ready(function() {
     });
 });
 
+$("#show-login").on("click", function () {
+    $("#login-page").removeClass('d-none');
+    $("#register-page").addClass('d-none');
+});
+
+$("#show-register").on("click", function () {
+    $("#register-page").removeClass('d-none');
+    $("#login-page").addClass('d-none');
+});
+
 $('#createTwackModal').on('hidden.bs.modal', function (e) {
     $("#twackarea").val('');
     $('.img-vid').removeClass('d-none');

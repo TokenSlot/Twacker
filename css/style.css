@@ -5,6 +5,25 @@
 
 html, body {
     width: 100%;
+    height: 100%;
+}
+
+.fill {
+    min-height: 100%;
+    height: 100%;
+}
+
+div.cn {
+    position: relative;
+    text-align: center;
+}
+
+div.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .nav-header {
@@ -126,5 +145,19 @@ html, body {
     margin-bottom: 5px;
 }
 
+.bg-log {
+    background: url("../img/log.jpg");
+    background-size: cover;
+}
+
+.bg-reg {
+    background: url("../img/reg.jpg");
+    background-size: cover;
+}
+
+.bg-home {
+    background: url("../img/home.jpg");
+    background-size: cover;
+}
 
 

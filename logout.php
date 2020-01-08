@@ -4,6 +4,6 @@
     session_unset();
     session_destroy();
 
-    echo '<script>location.href ="login.php"</script>'
+    echo '<script>location.href ="home.php"</script>'
 
 ?>

@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Twacker</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
 
 <?php
-    include('session.php');
     include('database.php');
-    if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
-        echo "<script>location.href='index.php'</script>";
-    }
 
     if (isset($_POST['register'])) {
         $uname = htmlentities($_POST['uname']);
@@ -50,19 +36,16 @@
 
 ?>
 
-<body>
-
-    <div class="container">
+    <div id="register" class="container">
         <div class="mt-5 box">
             <form class="needs-validation" method="post" novalidate>
-                <h3 class="text-center">CREATE AN ACCOUNT</h3>
+                <h3 class="text-center">Register</h3>
                 <input type="text" class="top form-control" placeholder="Username" name="uname" required>
                 <input type="password" class="middle form-control" placeholder="Password" name="pword" required>
                 <input type="email" class="middle form-control" placeholder="Email" name="email" required>
                 <input type="text" class="middle form-control" placeholder="First Name" name="fname" required>
                 <input type="text" class="bottom form-control" placeholder="Last Name" name="lname" required>
                 <input type="submit" class="btn btn-success btn-block" value="Register" name="register">
-                <small class="text-muted mb-0">Already have an account? <a href="login.php">Login</a></small>
             </form>
         </div>
     </div>
@@ -92,5 +75,3 @@
     <?php
         include('scripts.php');
     ?>
-    </body>
-</html>

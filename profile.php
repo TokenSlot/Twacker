@@ -14,6 +14,10 @@
     include('session.php');
     include('database.php');
 
+    if (!isset($_SESSION['username']) && empty($_SESSION['username'])) {
+        echo '<script>location.href="home.php"</script>';
+    }
+
     if (isset($_GET['username'])) {
         $profile_owner = $_GET['username'];
     } else {
